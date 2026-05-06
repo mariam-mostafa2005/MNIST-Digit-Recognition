@@ -23,3 +23,8 @@ using the MNIST dataset.
 ## How to Run
 1. Open the notebook in Google Colab
 2. Run all cells in order (Runtime → Run All)
+
+Observations
+
+    ReLU vs Sigmoid: Using sigmoid slowed down the training process and resulted in slightly lower accuracy compared to relu, proving that relu is a better choice for hidden layers in this architecture.
+    Network Size: Increasing the neurons (Exp 3) gave the best accuracy (97.92%), but looking at the training curves in the notebook, it also showed early signs of overfitting compared to the baseline.

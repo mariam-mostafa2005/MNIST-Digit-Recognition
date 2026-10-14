@@ -1,7 +1,7 @@
 # Handwritten Digit Recognition (MNIST)
 
 ## Problem Description
-Building a Neural Network (MLP) to recognize handwritten digits (0-9)
+Building an MLP to recognize handwritten digits (0-9)
 using the MNIST dataset.
 
 ## Dataset
@@ -26,5 +26,4 @@ using the MNIST dataset.
 
 Observations
 
-    ReLU vs Sigmoid: Using sigmoid slowed down the training process and resulted in slightly lower accuracy compared to relu, proving that relu is a better choice for hidden layers in this architecture.
-    Network Size: Increasing the neurons (Exp 3) gave the best accuracy (97.92%), but looking at the training curves in the notebook, it also showed early signs of overfitting compared to the baseline.
+Comparing Exp 1 and Exp 2, the same 128→64 MLP with ReLU achieved 97.59%, while the same architecture with Sigmoid achieved 97.17%. Exp 3 shows that increasing the hidden size to 256→128 with ReLU improved the result to 97.92%. This suggests that ReLU performs better than Sigmoid in this configuration, and a larger MLP layer size helps improve accuracy.
